@@ -1,0 +1,54 @@
+
+html,body
+    width 100%
+    height 100%
+body
+    margin 0
+    display inline-block
+
+.app
+    margin 0
+    width 100%
+    height 100%
+    display inline-block
+    transition 1s all linear
+    animation-timing-function linear
+    background-size 200% 200%
+    background-position 50% 50%
+    background-image repeating-linear-gradient(45deg,transparent,transparent 5rem,lightyellow 5rem,lightyellow 10rem)
+
+    
+.present
+    margin 0
+    text-align center
+    font-size 5rem
+    margin-top 45vh
+    z-index 19961202
+    position relative
+.icon
+    position fixed
+    display inline-block
+    transition .5s all ease-in-out
+    animation rotation 2s infinite
+    animation-timing-function linear
+    &:active
+        margin-top -10vh
+        margin-left -10vh
+        font-size 12rem
+    &:hover
+        text-shadow 0 0 4rem #E91E63
+        cursor pointer
+
+.canvas
+    width 100%
+    height 100%
+    position fixed
+    z-index 0
+    left 0
+    top 0
+
+@keyframes rotation
+    //from
+    //    transform rotate(0deg)
+    to
+        transform rotate(360deg)
